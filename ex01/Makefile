@@ -6,7 +6,7 @@
 #    By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/23 12:02:14 by gpinilla          #+#    #+#              #
-#    Updated: 2024/11/23 16:30:13 by gpinilla         ###   ########.fr        #
+#    Updated: 2024/11/25 01:00:37 by gpinilla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ BROWN =                 \033[38;2;184;143;29m
 ################################################################################
 
 # Variables
-NAME            = Bureaucrat
+NAME            = Form
 CC              = c++
 FLAGS           = -g -Wall -Werror -Wextra -std=c++98 -MMD -MP -fsanitize=address
 RM              = rm -rf
@@ -39,8 +39,8 @@ RM              = rm -rf
 DIR_OBJ         = temp/
 
 # Archivos de cabecera y fuentes
-HEADERS         = Bureaucrat.hpp
-SRC             = Bureaucrat.cpp  main.cpp
+HEADERS         = Bureaucrat.hpp  Form.hpp
+SRC             = Bureaucrat.cpp  Form.cpp  main.cpp
 
 # Objetos y dependencias
 OBJ             = $(addprefix $(DIR_OBJ), $(SRC:.cpp=.o))

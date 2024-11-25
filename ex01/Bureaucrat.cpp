@@ -6,11 +6,12 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 12:56:58 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/23 16:12:15 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/25 00:53:23 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 Bureaucrat::Bureaucrat() : name("Unamed"), grade(150) {
 	std::cout << "Deafault contrusctor called" << std::endl;
@@ -52,6 +53,16 @@ void Bureaucrat::incrementGrade() {
 void Bureaucrat::decrementGrade() {
 	if (this->grade + 1 > 150) throw GradeTooHighException();
 	else this->grade++;
+}
+
+void Bureaucrat::signForm(Form& form) {
+    try {
+        form.beSigned(*this);
+        std::cout << this->name << " signed " << form.getName() << std::endl;
+    } catch (const std::exception& e) {
+        std::cout << this->name << " couldn't sign " << form.getName()
+                  << " because " << e.what() << std::endl;
+    }
 }
 
 const char* Bureaucrat::GradeTooLowException::what() const throw() {
