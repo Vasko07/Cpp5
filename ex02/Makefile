@@ -6,7 +6,7 @@
 #    By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/23 12:02:14 by gpinilla          #+#    #+#              #
-#    Updated: 2024/11/27 21:39:14 by gpinilla         ###   ########.fr        #
+#    Updated: 2024/11/27 21:45:28 by gpinilla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ BROWN =                 \033[38;2;184;143;29m
 ################################################################################
 
 # Variables
-NAME            = Form
+NAME            = 28B
 CC              = c++
 FLAGS           = -g -Wall -Werror -Wextra -std=c++98 -MMD -MP -fsanitize=address
 RM              = rm -rf
