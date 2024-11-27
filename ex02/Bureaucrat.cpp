@@ -6,12 +6,12 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 12:56:58 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/25 23:25:32 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/27 21:39:46 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
+#include "AForm.hpp"
 
 Bureaucrat::Bureaucrat() : name("Unamed"), grade(150) {
 	std::cout << "Deafault contrusctor called" << std::endl;
@@ -55,7 +55,7 @@ void Bureaucrat::decrementGrade() {
 	else this->grade++;
 }
 
-void Bureaucrat::signForm(Form& form) {
+void Bureaucrat::signForm(AForm& form) {
     try {
         form.beSigned(*this);
         std::cout << this->name << " signed " << form.getName() << std::endl;
@@ -65,7 +65,7 @@ void Bureaucrat::signForm(Form& form) {
     }
 }
 
-void Bureaucrat::executeForm(const Form& form) const {
+void Bureaucrat::executeForm(const AForm& form) const {
     try {
         form.execute(*this);
         std::cout << getName() << " executed " << form.getName() << ".\n";

@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 23:23:10 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/25 23:27:06 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/27 21:40:11 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
     ~RobotomyRequestForm();
 
 protected:
-    void performAction() const override;
+    void performAction() const;
 };
 
 #endif

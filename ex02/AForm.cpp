@@ -6,12 +6,13 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 20:33:08 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/25 23:30:20 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/26 17:42:20 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AForm.hpp"
 #include <iostream>
+#include "Bureaucrat.hpp"
 
 // Constructor
 AForm::AForm(const std::string& name, int gradeToSign, int gradeToExecute, const std::string& target)

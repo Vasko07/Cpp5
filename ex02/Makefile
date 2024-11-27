@@ -6,7 +6,7 @@
 #    By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/23 12:02:14 by gpinilla          #+#    #+#              #
-#    Updated: 2024/11/25 01:00:37 by gpinilla         ###   ########.fr        #
+#    Updated: 2024/11/27 21:39:14 by gpinilla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,8 +39,8 @@ RM              = rm -rf
 DIR_OBJ         = temp/
 
 # Archivos de cabecera y fuentes
-HEADERS         = Bureaucrat.hpp  Form.hpp
-SRC             = Bureaucrat.cpp  Form.cpp  main.cpp
+HEADERS         = Bureaucrat.hpp  AForm.hpp  PresidentialPardonForm.hpp  RobotomyRequestForm.hpp  ShrubberyCreationForm.hpp
+SRC             = Bureaucrat.cpp  AForm.cpp  PresidentialPardonForm.cpp  RobotomyRequestForm.cpp  ShrubberyCreationForm.cpp  main.cpp
 
 # Objetos y dependencias
 OBJ             = $(addprefix $(DIR_OBJ), $(SRC:.cpp=.o))

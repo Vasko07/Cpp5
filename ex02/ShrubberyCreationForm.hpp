@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 23:23:16 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/25 23:27:50 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/27 21:40:19 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ public:
     ~ShrubberyCreationForm();
 
 protected:
-    void performAction() const override;
+    void performAction() const;
 };
 
 #endif
