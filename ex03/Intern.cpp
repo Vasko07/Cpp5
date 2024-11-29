@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 17:46:00 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/28 17:52:24 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/29 17:22:27 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ AForm* Intern::makeForm(const std::string& formName, const std::string& target) 
         }
     }
 
-    std::cerr << "Error: Form '" << formName << "' does not exist." << std::endl;
+    std::cout << "Error: Form '" << formName << "' does not exist." << std::endl;
     return NULL;
 }
 

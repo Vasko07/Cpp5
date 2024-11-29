@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 13:24:24 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/28 17:47:42 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/29 17:22:27 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,21 +27,21 @@ int main() {
         john.signForm(*shrubberyForm);
         john.executeForm(*shrubberyForm);
     } catch (std::exception& e) {
-        std::cerr << e.what() << std::endl;
+        std::cout << e.what() << std::endl;
     }
 
     try {
         john.signForm(*robotomyForm);
         john.executeForm(*robotomyForm);
     } catch (std::exception& e) {
-        std::cerr << e.what() << std::endl;
+        std::cout << e.what() << std::endl;
     }
 
     try {
         john.signForm(*pardonForm);
         john.executeForm(*pardonForm);
     } catch (std::exception& e) {
-        std::cerr << e.what() << std::endl;
+        std::cout << e.what() << std::endl;
     }
 
     // Intentar crear un formulario inválido

@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 13:24:24 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/25 00:45:16 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/29 17:22:27 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main() {
         std::cout << taxForm << std::endl;
 
     } catch (const std::exception& e) {
-        std::cerr << e.what() << std::endl;
+        std::cout << e.what() << std::endl;
     }
     return 0;
 }

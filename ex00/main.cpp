@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/23 13:24:24 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/23 16:15:20 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/29 17:22:27 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main() {
 		b1.incrementGrade();
     }
     catch (const std::exception &e) {
-        std::cerr << "Exception: " << e.what() << std::endl;
+        std::cout << "Exception: " << e.what() << std::endl;
     }
 
     return 0;

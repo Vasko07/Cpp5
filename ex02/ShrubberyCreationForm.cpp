@@ -6,7 +6,7 @@
 /*   By: gpinilla <gpinilla@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 23:23:13 by gpinilla          #+#    #+#             */
-/*   Updated: 2024/11/27 21:45:48 by gpinilla         ###   ########.fr       */
+/*   Updated: 2024/11/29 17:22:27 by gpinilla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ ShrubberyCreationForm::~ShrubberyCreationForm() {}
 void ShrubberyCreationForm::performAction() const {
     std::ofstream outFile((getTarget() + "_shrubbery").c_str()); // Convertir a const char*
     if (!outFile) {
-        std::cerr << "Error: Could not open file for writing." << std::endl;
+        std::cout << "Error: Could not open file for writing." << std::endl;
         return;
     }
 
